@@ -1,6 +1,6 @@
 Declare,metatab-latest
-Title,
-Description,
+Title,Census Questions
+Description,0
 Identifier,356c4b1b-6523-406b-a820-7b5349df0a51
 Name,civicknowledge.com-census_questions-1.1.1
 Dataset,census_questions
@@ -14,7 +14,7 @@ Version.Major,1
 Version.Minor,1
 Version.Patch,1
 Created,2023-01-08T21:27:53
-Modified,2023-01-08T21:27:54
+Modified,2023-01-08T22:05:58
 Giturl,https://github.com/CivicKnowledge/autosoc.git
 ""
 Section,Contacts,Email,Organization,Url
@@ -26,5 +26,14 @@ Documentation,file:README.md,README,,
 Section,References,Name,Description,
 ""
 Section,Resources,Name,Description,
+Datafile,notebooks/build.ipynb#df,question,Data Questions,
 ""
-Section,Schema,DataType,AltName,Description
+Section,Schema,DataType,AltName,Description,Has_Codes
+Table,question,,,,
+Table.Column,column_id,string,,,
+Table.Column,measure,text,,,
+Table.Column,restriction,text,,,
+Table.Column,description,string,,,
+Table.Column,time,string,,,
+Table.Column,place,text,,,
+Table.Column,question,text,,,
